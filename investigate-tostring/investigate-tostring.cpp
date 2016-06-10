@@ -1,6 +1,6 @@
-#include <boost/spirit/include/qi.hpp>
+//#pragma optimize( "", off )
 #include <boost/spirit/include/karma.hpp>
-
+//#pragma optimize( "", on ) 
 
 bool to_string(std::string & str, int value)
 {
@@ -9,18 +9,16 @@ bool to_string(std::string & str, int value)
 	return karma::generate(sink, value);
 }
 
-
 int main()
 {
 	std::string out;
 
-	to_string(out, 2);
-	std::cout << out << "\n";
-	out.clear();
-
-	to_string(out, -2);
-	std::cout << out << "\n";
-	out.clear();
+	for (int i = 5; i >= -5; i--)
+	{
+		to_string(out, i);
+		std::cout << i << " => " << out << "\n";
+		out.clear();
+	}
 
 	return 0;
 }
