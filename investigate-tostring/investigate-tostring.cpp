@@ -1,6 +1,4 @@
-//#pragma optimize( "", off )
 #include <boost/spirit/include/karma.hpp>
-//#pragma optimize( "", on ) 
 
 bool to_string(std::string & str, int value)
 {
