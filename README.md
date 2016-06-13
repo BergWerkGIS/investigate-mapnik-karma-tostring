@@ -2,6 +2,10 @@
 
 Submitted to Microsoft Connect: https://connect.microsoft.com/VisualStudio/feedback/details/2809804/c-optimization-bug
 
+Maybe related: [Microsoft Connect: Possible C++ optimization bug](https://connect.microsoft.com/VisualStudio/Feedback/Details/2696521)
+
+Corresponding mapnik issue: https://github.com/mapnik/mapnik/issues/3437
+
 ------
 
 Tested with 
